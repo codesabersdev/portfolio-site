@@ -28,7 +28,7 @@ st.write(content_1, unsafe_allow_html=True)
 st.markdown('###')
 
 showcase_col1, empty_col, showcase_col2 = st.columns([1.5, 0.5, 1.5])
-df = pandas.read_csv("data.csv", sep=";")
+df = pandas.read_csv("data.csv")
 
 with showcase_col1:
     for index, row in df[::2].iterrows():
